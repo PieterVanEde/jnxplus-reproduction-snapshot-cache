@@ -1,22 +1,22 @@
 {
-  "name": "org",
+  "name": "testapp",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "org",
-  "sourceRoot": "apps/org/src",
+  "prefix": "testmonorepo",
+  "sourceRoot": "apps/testapp/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/org",
-        "index": "apps/org/src/index.html",
-        "browser": "apps/org/src/main.ts",
+        "outputPath": "dist/apps/testapp",
+        "index": "apps/testapp/src/index.html",
+        "browser": "apps/testapp/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/org/tsconfig.app.json",
-        "assets": ["apps/org/src/favicon.ico", "apps/org/src/assets"],
-        "styles": ["apps/org/src/styles.css"],
+        "tsConfig": "apps/testapp/tsconfig.app.json",
+        "assets": ["apps/testapp/src/favicon.ico", "apps/testapp/src/assets"],
+        "styles": ["apps/testapp/src/styles.css"],
         "scripts": []
       },
       "configurations": {
@@ -47,10 +47,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "org:build:production"
+          "buildTarget": "testapp:build:production"
         },
         "development": {
-          "buildTarget": "org:build:development"
+          "buildTarget": "testapp:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -58,7 +58,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "org:build"
+        "buildTarget": "testapp:build"
       }
     }
   }

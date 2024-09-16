@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "org",
+            "prefix": "testmonorepo",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "org",
+            "prefix": "testmonorepo",
             "style": "kebab-case"
           }
         ]

@@ -1,0 +1,9 @@
+{
+  "name": "angular-library-a",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/angular-library-a/src",
+  "prefix": "testmonorepo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
