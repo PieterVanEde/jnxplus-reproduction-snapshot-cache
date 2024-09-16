@@ -1,10 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {AngularLibraryAComponent} from "@testmonorepo/angular-library-a";
+import {AngularLibraryBComponent} from "@testmonorepo/angular-library-b";
 
 @Component({
   selector: 'testmonorepo-nx-welcome',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AngularLibraryAComponent, AngularLibraryBComponent],
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -898,6 +900,9 @@ nx affected:e2e</pre>
             />
           </svg>
         </p>
+
+        <testmonorepo-angular-library-a></testmonorepo-angular-library-a>
+        <testmonorepo-angular-library-b></testmonorepo-angular-library-b>
       </div>
     </div>
   `,
