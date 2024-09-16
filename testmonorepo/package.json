@@ -28,6 +28,7 @@
     "@angular/cli": "~17.1.0",
     "@angular/compiler-cli": "~17.1.0",
     "@angular/language-service": "~17.1.0",
+    "@jnxplus/nx-maven": "^0.42.1",
     "@nx/eslint": "18.0.8",
     "@nx/eslint-plugin": "18.0.8",
     "@nx/jest": "18.0.8",
