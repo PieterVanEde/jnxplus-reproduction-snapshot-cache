@@ -7,9 +7,14 @@
 
 
     <properties>
-        <java.version>17</java.version>
+        <java.version>8</java.version>
     </properties>
 
 
-<modules>
-    <module>apps/app-a</module><module>libs/lib-b</module><module>libs/lib-c</module><module>libs/lib-d</module></modules></project>
+  <modules>
+    <module>apps/app-a</module>
+    <module>libs/lib-b</module>
+    <module>libs/lib-c</module>
+    <module>libs/lib-d</module>
+  </modules>
+</project>
