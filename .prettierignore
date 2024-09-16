@@ -3,3 +3,8 @@
 /coverage
 /.nx/cache
 .angular
+
+
+# Maven target
+target/
+.m2/repository
