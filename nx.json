@@ -30,6 +30,25 @@
         "production",
         "^production"
       ]
+    },
+    "@jnxplus/nx-maven:run-task": {
+      "inputs": [
+        "default",
+        {
+          "externalDependencies": []
+        }
+      ],
+      "cache": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"],
+      "cache": true,
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/target",
+        "{workspaceRoot}/dist/{projectRoot}"
+      ]
     }
   },
   "plugins": [
@@ -48,7 +67,8 @@
     {
       "plugin": "@jnxplus/nx-maven",
       "options": {
-        "localRepoRelativePath": ".m2/repository"
+        "localRepoRelativePath": ".m2/repository",
+        "mavenRootDirectory": "./"
       }
     }
   ],
