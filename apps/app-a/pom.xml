@@ -5,6 +5,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>app-a</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
 	<name>app-a</name>
 	<description>This project was generated with nx-maven</description>
 
@@ -48,6 +49,13 @@
          <configuration>
             <mainClass>com.example.appa.App</mainClass>
          </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
       </plugin>
     </plugins>
   </build>

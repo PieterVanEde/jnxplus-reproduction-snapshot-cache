@@ -16,5 +16,5 @@
     <module>libs/lib-b</module>
     <module>libs/lib-c</module>
     <module>libs/lib-d</module>
-  </modules>
+  <module>libs/second-parent</module></modules>
 </project>

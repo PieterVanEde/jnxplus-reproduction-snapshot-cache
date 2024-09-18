@@ -10,7 +10,7 @@
         "{projectRoot}/target"
       ],
       "options": {
-        "task": "compile -DskipTests=true"
+        "task": "install -DskipTests=true"
       }
     },
     "serve": {

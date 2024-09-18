@@ -10,9 +10,9 @@
 
   <parent>
 		<groupId>com.example</groupId>
-		<artifactId>root-parent-project</artifactId>
+		<artifactId>second-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-    <relativePath>../../pom.xml</relativePath> 
+    <relativePath>../second-parent/pom.xml</relativePath>
 	</parent>
 
   <properties>
