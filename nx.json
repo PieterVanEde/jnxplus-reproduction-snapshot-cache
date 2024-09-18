@@ -34,7 +34,6 @@
     "@jnxplus/nx-maven:run-task": {
       "inputs": [
         "default",
-        { "dependentTasksOutputFiles": "**/*", "transitive": true },
         {
           "externalDependencies": []
         }
